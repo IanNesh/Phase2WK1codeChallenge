@@ -1,15 +1,16 @@
 import React from "react";
-
-function Transaction(props) {
+function Transaction({ date, description, category, amount, id, handleDeleteTransaction }) {
+  const handleDelete = ()=>{
+    handleDeleteTransaction(id)
+  }
   return (
     <tr>
-      <td>{props.date}</td>
-      <td>{props.description}</td>
-      <td>{props.category}</td>
-      <td>{props.amount}</td>
-      <button onClick={(e)=>{e.target.parentNode.remove()}}>Delete</button>
+      <td>{date}</td>
+      <td>{description}</td>
+      <td>{category}</td>
+      <td>{amount}</td>
+      <td><button className="ui button" onClick={handleDelete}>Delete</button></td>
     </tr>
   );
 }
-
 export default Transaction;

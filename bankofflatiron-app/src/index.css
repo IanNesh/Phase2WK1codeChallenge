@@ -1,13 +1,233 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  text-align: center;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #28342D;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61DAFB;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+table {
+  margin: 0px;
+  margin-left: 100px;
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #C4D0F0;
+}
+form button {
+  margin-top: 0px;
+  margin-right: -100px;
+  padding: 8px;
+  width: 150px;
+  background-color: #4C4FAF;
+  border-radius: 10px;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.transactions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.form-container label {
+  margin: 10px 0;
+}
+.form-container input {
+  padding: 10px;
+  margin: 5px;
+}
+.form-container button[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.transactions-table th,
+.transactions-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.transactions-table th {
+  text-align: left;
+}
+.delete-btn {
+  background-color: rgb(13, 0, 255);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+.filter-container{
+  text-align: center;
+}
+.search{
+  background-color: rgb(16, 16, 14);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+h2{
+  text-align: center;
+}.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #28342D;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61DAFB;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+table {
+  margin: 0px;
+  margin-left: 100px;
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #C4D0F0;
+}
+form button {
+  margin-top: 0px;
+  margin-right: -100px;
+  padding: 8px;
+  width: 150px;
+  background-color: #4C4FAF;
+  border-radius: 10px;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.transactions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.form-container label {
+  margin: 10px 0;
+}
+.form-container input {
+  padding: 10px;
+  margin: 5px;
+}
+.form-container button[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.transactions-table th,
+.transactions-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.transactions-table th {
+  text-align: left;
+}
+.delete-btn {
+  background-color: rgb(13, 0, 255);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+.filter-container{
+  text-align: center;
+}
+.search{
+  background-color: rgb(16, 16, 14);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+h2{
+  text-align: center;
 }

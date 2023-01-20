@@ -1,22 +1,9 @@
 import React from "react";
 import Transaction from "./Transaction";
-
-function TransactionsList({ transactions, search }) {
-
- 
-
- 
-
-  const filteredTransactions = transactions.filter(transDescription => {
-    if(search === '') return true
-    return transDescription.description.includes(search)
+function TransactionsList({transactions,handleDeleteTransaction}) {
+  const list = transactions.map((item)=>{
+    return <Transaction key={item.id} date={item.date} id={item.id} description={item.description} category={item.category} amount={item.amount}  handleDeleteTransaction={handleDeleteTransaction}/>;
   })
-
-  const mapTransaction = filteredTransactions.map(transaction => {
-    return <Transaction key={transaction.id} date={transaction.date} amount={transaction.amount} 
-    description={transaction.description} category={transaction.category} />
-  })
-
   return (
     <table className="ui celled striped padded table">
       <tbody>
@@ -34,10 +21,9 @@ function TransactionsList({ transactions, search }) {
             <h3 className="ui center aligned header">Amount</h3>
           </th>
         </tr>
-        { mapTransaction }
+        {list}
       </tbody>
     </table>
   );
 }
-
 export default TransactionsList;
